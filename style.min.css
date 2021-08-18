@@ -815,7 +815,7 @@ label.error {
 	border: 1px solid #CCC;
 }
 
-.download-wrapper .copy textarea#copy-text {
+.download-wrapper .copy textarea#technicalarpresult {
 	width: 100%;
 	height: 300px;
 	border-radius: 4px;
