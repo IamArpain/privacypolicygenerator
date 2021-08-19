@@ -404,5 +404,18 @@ require_visible="require_visible" ' + checked + ' data-value-source="multi"/>' +
         show(FORM);
     })
     ();
-
+	function copyToClipboard(element) {
+			//Copied to clipboard. You can paste your generated policy now (Control+V or CMD+V or right-click > Paste).
+			 $('#copybtn').text('Copied to clipboard.');
+		     i = document.createElement('textarea');
+			 i.id = "copyData";
+			 i.value = $(element).text();
+		 document.body.appendChild(i);
+			 i.select();
+			 document.execCommand('copy');
+			 document.body.removeChild(i);
+			 setTimeout( function(){
+				 $('#copybtn').text('Copy text to clipboard')
+			 }, 5000);
+	}
 //]]>
